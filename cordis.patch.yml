@@ -1,0 +1,6 @@
+# dsh-file-opener bundle patch layer — 插入插件入口行。
+# name 为包名，loader 解析包入口 lib/index.js（宿主半侧）；
+# 浏览器半侧由 package.json 的 dsh.client 声明自动装配（无需在此声明）。
+- insert:
+    - id: dsh-file-opener
+      name: 'dsh-file-opener'

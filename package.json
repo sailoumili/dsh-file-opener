@@ -1,0 +1,67 @@
+{
+  "name": "dsh-file-opener",
+  "version": "1.4.0",
+  "description": "DSH 插件：对话里的文件与目录路径点一下就打开——可预览的在右侧侧边栏显示，其余用系统默认程序打开。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "deepseek-harness",
+    "deepseek",
+    "cordis",
+    "cordis-plugin",
+    "file-opener",
+    "open-file",
+    "file-path",
+    "clickable-path",
+    "click-to-open",
+    "file-preview",
+    "document-preview",
+    "sidebar",
+    "sidebar-preview",
+    "markdown-preview",
+    "code-preview",
+    "explorer",
+    "windows",
+    "agent",
+    "llm",
+    "文件打开",
+    "路径点击",
+    "侧边栏预览",
+    "对话文件",
+    "资源管理器"
+  ],
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "cordis.patch.yml"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sailoumili/dsh-file-opener.git"
+  },
+  "homepage": "https://github.com/sailoumili/dsh-file-opener#readme",
+  "bugs": {
+    "url": "https://github.com/sailoumili/dsh-file-opener/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  }
+}
